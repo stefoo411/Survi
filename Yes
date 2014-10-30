@@ -2,8 +2,12 @@
 <html>
 <body>
 
-<h1 style = "color:purple ; font-size: 300%; font-family: Trebuchet MS"><center>Survi</center></h1>
-<h2> Can you see me </h2>
+<center>
+<h1 style = "color:purple ; font-size: 300%; font-family: Trebuchet MS">Survi</h1>
+<h2 style = "font-family: Trebuchet MS"> Creators: </h2>
+<p style = "font-family: Trebuchet MS"> Stephanie Foo, HanSoo Lee, Jiwon Lee </p>
+</center>
+
 <a href="http://www.google.com">Google</a>
 
 </body>
