@@ -8,6 +8,8 @@
 <p style = "font-family: Trebuchet MS"> Stephanie Foo, HanSoo Lee, Jiwon Lee </p>
 </center>
 
+<head>
+<style>
 ul {
     list-style-type: none;
     margin: 0;
@@ -24,6 +26,8 @@ a {
     width: 60px;
     background-color: #dddddd;
 }
+</style>
+</head>
 
 <ul>
   <li><a href="#home">Home</a></li>
