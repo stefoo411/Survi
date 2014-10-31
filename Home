@@ -9,6 +9,13 @@
 <head>
 <style>
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 li {
     float: left;
 }
@@ -24,16 +31,14 @@ a {
 </head>
 
 <center>
-<ul list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;>
+<ul>
     <li><a href="#search">Search</a></li>
     <li><a href="#newsurveys">New Surveys</a></li>
     <li><a href="#endingsurveys">Ending Surveys</a></li>
     <li><a href="#monthlylottery">Monthly Lottery</a></li>
 </ul>
 </center>
+
 <!--
 <ul>
     <li><a href="#create">Create</a></li>
@@ -43,6 +48,7 @@ a {
     <li><a href="accountsettings">Account Settings</a></li>
 </ul>
 -->
+
 <center>
 <h2 style = "font-family: Trebuchet MS"> Creators: </h2>
 <p style = "font-family: Trebuchet MS"> Stephanie Foo, HanSoo Lee, Jiwon Lee </p>
