@@ -38,9 +38,15 @@ a {
 </ul>
 </center>
 
-<ul>
+<!--
+<ul >
     <li><a href="#create">Create</a></li>
-    <li><a href="#edit">
+    <li><a href="#edit">Edit</a></li>
+    <li><a href="#history">History</a></li>
+    <li><a href="surveystats">Survey Stats</a></li>
+    <li><a href="accountsettings">Account Settings</a></li>
+</ul>
+-->
 
 <center>
 <h2 style = "font-family: Trebuchet MS"> Creators: </h2>
