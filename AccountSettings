@@ -5,25 +5,32 @@
 <h1 style = "color:purple ; font-size: 300%; font-family: Trebuchet MS">Account Settings</h1>
 </center>
 
-<form align = "left"; style = "font-family: Trebuchet MS"> Username
+<head><style>
+form {
+    align = "left";
+    style = "font-family: Trebuchet MS";
+}
+</style></head>
+
+<form> Username
 <input type="text" name="username"><br>
 </form>
 
-<form align = "left"; style = "font-family: Trebuchet MS"> Email
+<form> Email
 <input type = "text"; name = "email"><br>
 </form>
 
 <h3 style = "font-family: Trebuchet MS"><u>Change password</u></h3>
 
-<form align = "left"; style = "font-family: Trebuchet MS"> Old password:
+<form> Old password:
 <input type="text" name="oldpassword"><br>
 </form>
 
-<form align = "left"; style = "font-family: Trebuchet MS"> New password:
+<form> New password:
 <input type="text" name="newpassword"><br>
 </form>
 
-<form align = "left"; style = "font-family: Trebuchet MS"> Confirm new password:
+<form> Confirm new password:
 <input type="text" name="confirmpassword"><br>
 </form>
 
