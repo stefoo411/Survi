@@ -9,7 +9,7 @@
 <head>
 <style>
 
-ul {
+ul #mainmenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ a {
 </style>
 </head>
 
-<ul align="center">
+<ul align = "center"; id = "mainmenu">
     <li><a href="#search">Search</a></li>
     <li><a href="#newsurveys">New Surveys</a></li>
     <li><a href="#endingsurveys">Ending Surveys</a></li>
