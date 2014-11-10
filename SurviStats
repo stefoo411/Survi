@@ -10,26 +10,31 @@ table#t01 tr:nth-child(odd) {
     background-color: #fff;
 }
 table#t01 th {
-    color: white;
-    background-color: black;
+    color: #99CCFF;
+    background-color: purple;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Trebuchet MS;
 }
 </style>
 
-<table id = #t01; style="width:100%"; border-spacing : 5px>
+<table id = "t01"; style="width:100%"; border-spacing : 5px>
   <tr>
     <tr>
-        <th>Firstname</th>
-        <th>Lastname</th> 
-        <th>Points</th>
+        <th>Question1</th>
+        <th>Question2</th> 
+        <th>Question3</th>
     </tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
+    <td>Response from P1</td>
+    <td>Reponse from P1</td> 
+    <td>Response from P1</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
+    <td>Response from P2</td>
+    <td>Response from P2</td> 
+    <td>Response from P2</td>
   </tr>
 </table>
 
