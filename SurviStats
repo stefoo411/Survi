@@ -28,7 +28,7 @@ table, th, td {
         <th>Question3</th>
     </tr>
     <td>Response from P1</td>
-    <td>Reponse from P1</td> 
+    <td>Response from P1</td> 
     <td>Response from P1</td>
   </tr>
   <tr>
@@ -36,6 +36,12 @@ table, th, td {
     <td>Response from P2</td> 
     <td>Response from P2</td>
   </tr>
+  <tr>
+    <td>Response from P3</td>
+    <td>Response from P3</td> 
+    <td>Response from P3</td>
+  </tr>
+
 </table>
 
 </body>
