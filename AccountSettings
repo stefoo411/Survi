@@ -23,15 +23,15 @@ form {
 <h3 style = "font-family: Trebuchet MS"><u>Change password</u></h3>
 
 <form> Old password:
-<input type="text" name="oldpassword"><br>
+<input type = "text" name = "oldpassword"><br>
 </form>
 
 <form> New password:
-<input type="text" name="newpassword"><br>
+<input type = "text" name = "newpassword"><br>
 </form>
 
 <form> Confirm new password:
-<input type="text" name="confirmpassword"><br>
+<input type = "text" name = "confirmpassword"><br>
 </form>
 
 </body>
