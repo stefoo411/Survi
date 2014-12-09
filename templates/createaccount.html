@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+
+{% extends "base.html" %}
+{% block title %}GET Request{% endblock %}
+{% block content %}
+  {% for data in users %}
+    <h1>{{data['username']}}</h1>
+  {% endfor %}
+{% endblock %}
+
 <script type="text/javascript">
       function newUser() {
            if (db.getUser('username': username) !== false) {
