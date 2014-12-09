@@ -14,13 +14,13 @@ users = db.users
 @app.route('/')
 def hello():
 	#users.insert({'username':'paras2','password':'cool'})
-	return render_template("index.html")
+	return render_template('index.html')
 
-@app.route('/create')
+@app.route('/create', methods=['GET','POST'])
 def create():
 	users = db.users
 	users = users.find({})
-	return render_template("createaccount.html", users=users)
+	return render_template('createaccount.html', users=users)
 
 @app.route('/change')
 def chance():
