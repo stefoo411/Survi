@@ -1,14 +1,14 @@
 from flask import Flask, render_template, request, redirect
-import jinja2
+import jinja2 //jinja2 is a python based templating language, so we can render the html templates easily.
 import os
 from pymongo import *
 import os
 
-app = Flask(__name__)
+app = Flask(__name__) //creates an flask instance, 
 
 app.secret_key = 'kbwkfwbhwbhk'
-client = MongoClient('mongodb://survistefoo:survi@ds051110.mongolab.com:51110/survi')
-db = client.get_default_database()
+client = MongoClient('mongodb://survistefoo:survi@ds051110.mongolab.com:51110/survi') //establishes connection to mongodb server
+db = client.get_default_database()  
 users = db.users
 
 @app.route('/')
@@ -38,6 +38,6 @@ def login():
 	users = users.find({})
 	return render_template('get.html',users=users)
 
-if __name__ == '__main__':
-	port = int(os.environ.get('PORT', 8000))
-	app.run(host='0.0.0.0', port=port,debug=True)
+if __name__ == '__main__': //main method
+	port = int(os.environ.get('PORT', 8000)) //connects to local host, which is where we're currently running the website locally.
+	app.run(host='0.0.0.0', port=port,debug=True) //just starts running the website.
