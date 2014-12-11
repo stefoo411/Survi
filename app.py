@@ -13,10 +13,10 @@ users = db.users
 
 @app.route('/')
 def hello():
-	#users.insert({'username':'paras2','password':'cool'})
+	users.insert({'username':'paras2','password':'cool'})
 	return render_template('index.html')
 
-@app.route('/create', methods=['GET','POST'])
+@app.route('/create')
 def create():
 	users = db.users
 	users = users.find({})
