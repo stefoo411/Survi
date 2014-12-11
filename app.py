@@ -14,7 +14,7 @@ users = db.users
 @app.route('/')
 def hello():
 	users.insert({'username':'paras2','password':'cool'})
-	return render_template('index.html')
+	return render_template('home.html')
 
 @app.route('/create')
 def create():
