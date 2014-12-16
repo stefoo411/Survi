@@ -10,12 +10,12 @@
 </script>
 <body>
       <h1 align = "center"> Create Account </h1>
-      <form method = "post" action="createaccountaction.php" align = "center">
+      <form method = "POST" action="/methodname" align = "center">
            Username: <input type="text" name="username" value = "<?PHP print $username ; ?>">
            <br><br>
            Password: <input type="text" name="password">
            <br><br>
-           <button submit = "newUser()">Submit</button>
+           <button type = "submit" class="btn btn-lg btn-primary">Submit</button>
       </form>
 </body>
 </html>

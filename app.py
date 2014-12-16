@@ -36,6 +36,18 @@ def login():
 	users = users.find({})
 	return render_template('get.html',users=users)
 
+@app.route('/newaccount', methods=['Get', 'POST'])
+def newaccount():
+	if request.method == 'POST':
+		user_name = request.form.get('username')
+		if not (user_name):
+				return render_template('createaccount.html', error="Cannot leave username blank")
+
+		users.insert({'name':user_name.strip(), blah})
+		return redirect('/methodname')
+	return render_template("createaccount.html")
+
+
 if __name__ == '__main__': #main method
 	port = int(os.environ.get('PORT', 8000)) #connects to local host, which is where we're currently running the website locally.
 	app.run(host='0.0.0.0', port=port,debug=True) #just starts running the website.
