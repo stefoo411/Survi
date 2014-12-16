@@ -18,7 +18,6 @@ def hello():
 @app.route('/create')
 def create():
 	users = db.users
-	users = users.find({})
 	return render_template('createaccount.html', users=users)
 
 @app.route('/change')
