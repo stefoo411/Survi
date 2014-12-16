@@ -36,14 +36,14 @@ def login():
 	users = users.find({})
 	return render_template('get.html',users=users)
 
-@app.route('/newaccount', methods=['Get', 'POST'])
+@app.route('/newaccount', methods=['GET', 'POST'])
 def newaccount():
 	if request.method == 'POST':
 		user_name = request.form.get('username')
 		if not (user_name):
 				return render_template('createaccount.html', error="Cannot leave username blank")
 
-		users.insert({'name':user_name.strip(), blah})
+		users.insert({'name':user_name.strip()})
 		return redirect('/methodname')
 	return render_template("createaccount.html")
 
