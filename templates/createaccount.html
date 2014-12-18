@@ -10,12 +10,19 @@
 </script>
 <body>
       <h1 align = "center"> Create Account </h1>
-      <form method = "POST" action="/methodname" align = "center">
-           Username: <input type="text" name="username" value = "<?PHP print $username ; ?>">
-           <br><br>
-           Password: <input type="text" name="password">
-           <br><br>
-           <button type = "submit" class="btn btn-lg btn-primary">Submit</button>
+      <form name ="form1" id = "1" method ="post" action ="">
+        Username: <INPUT TYPE = "TEXT" Name ="username">
+        Password: <INPUT TYPE = "TEXT" Name ="password">
+        <INPUT TYPE = "submit" Name = "Submit1" VALUE = "Submit">
       </form>
 </body>
 </html>
+
+<?PHP 
+  if (isset($_POST['Submit1'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    print ($username);
+    print ($password);
+  }
+?>
