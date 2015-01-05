@@ -47,7 +47,6 @@ def newaccount():
 		return redirect('/methodname')
 	return render_template("createaccount.html")
 
-
 if __name__ == '__main__': #main method
 	port = int(os.environ.get('PORT', 8000)) #connects to local host, which is where we're currently running the website locally.
 	app.run(host='0.0.0.0', port=port,debug=True) #just starts running the website.
