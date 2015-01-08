@@ -8,11 +8,12 @@ app = Flask(__name__) #creates an flask instances
 app.secret_key = 'kbwkfwbhwbhk'
 client = MongoClient('mongodb://survistefoo:survi@ds051110.mongolab.com:51110/survi') #establishes connection to mongodb server
 db = client.get_default_database()  
-users = db.users
+users = db['users']
 
 @app.route('/')
 def hello():
-	users.insert({'username':'paras2','password':'cool'})
+	print " hello "
+	users.insert({'username':'paras2','password':'sucks'})
 	return render_template('index_paras.html')
 
 @app.route('/create')
